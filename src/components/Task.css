@@ -1,0 +1,13 @@
+.Task {
+  padding: 1vh;
+  font-size: calc(14px + 1vh);
+}
+
+.Task:hover {
+  background-color: #2aa198 !important;
+}
+
+.Task-check {
+  margin-right: 1vw;
+  border-width: 5px;
+}

@@ -1,0 +1,102 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App h2 {
+  display: block;
+  margin: 0;
+  min-height: 10vh;
+  line-height: 10vh;
+  font-size: calc(12px + 5vh);
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 15vh;
+  min-width: min(600px, 85vw);
+}
+
+.Form input {
+  outline: 0;
+  background: #f2f2f2;
+  min-width: min(450px, 40vw);
+  border: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: calc(14px + 1vh);
+}
+
+button {
+  outline: 0;
+  background: #4CAF50;
+  width: auto;
+  border: 0;
+  padding: 15px;
+  margin: auto calc(2px + 0.5vw);
+  color: #FFFFFF;
+  font-size: calc(14px + 1vh);
+  cursor: pointer;
+  
+}
+
+button:hover{
+  border:1px solid #999;
+  padding: 15px 20px;
+}
+
+.Form div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.DropPanel {
+  max-height: 70vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  overflow-y: scroll;
+}
+
+/* rainbow background animation */
+.App { 
+  
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
